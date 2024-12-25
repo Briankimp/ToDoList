@@ -1,37 +1,74 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
-
 .container {
-    width: 100%;
-    min-height: 100vh;
-    background:linear-gradient(135deg,#153677, #4e085f) ;
-    padding: 10px;  
-    /* display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+  padding: 10px;
+  /* display: flex;
     align-items: center;
     justify-content: center; */
 }
 
 .ToDoApp {
-    border-radius: 10px;
-    background-color: white;
-    height: 100px; 
-    width: 100%;
-    max-width: 500px;
-    padding: 40px 30px 70px;
-    margin: 100px auto 20px;
+  border-radius: 10px;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+  padding: 40px 30px 70px;
+  margin: 100px auto 20px;
 }
 
-.ToDoApp h1{
-   display: flex;
+.ToDoApp h1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.ToDoApp img {
+  max-width: 30px;
+  margin: 0px 1px 0px;
+}
+
+/* .ToDoApp inputBox{
+    border-radius: 50%;
+    display: flex;
     align-items: center;
-    margin-bottom: 20px; 
+} */
+
+.inputrow {
+  /* border-radius: 10%; */
+  background-color: rgba(53, 51, 53, 0.095);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: fit-content; */
 }
-.ToDoApp img{
-    max-width: 30px;
-    margin: 0px 1px 0px;
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5945;
+  color: black;
+  border-radius: 30px;
 }
+button:hover{
+    color: white;
+     background: #e74536;
+}
+input {
+  outline: none;
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+}
+
