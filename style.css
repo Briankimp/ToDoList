@@ -66,11 +66,12 @@ input {
 
 ul li {
   list-style: none;
-  font-size: 17px;
+  font-size: 16px;
   padding: 12px 8px 12px 50px;
   user-select: none;
   cursor: pointer;
   position: relative;
+
 }
 
 ul li::before {
@@ -85,6 +86,8 @@ ul li::before {
   position: absolute;
   top: 12px;
   left: 8px;
+  text-align: center;
+  
 }
 ul li.checked {
   color: #555;
@@ -92,4 +95,24 @@ ul li.checked {
 }
 ul li.checked::before {
   background-image: url(images/checked.png);
+  text-align: center;
 }
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  /* background-color: red; */
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius:50% ;
+}
+
+ul li span:hover{
+  background-color: #e8e1e1;
+}
+
