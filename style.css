@@ -74,15 +74,22 @@ ul li {
 }
 
 ul li::before {
-  content: '';
-  height: 30px;
-  width: 30px;
+  content: "";
+  height: 28px;
+  width: 28px;
   /* background-color: #e74536; */
   background-image: url(images/unchecked.png);
   background-position: center;
-  background-size:cover;
+  background-size: cover;
   border-radius: 50%;
   position: absolute;
-  top:12px;
+  top: 12px;
   left: 8px;
+}
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  background-image: url(images/checked.png);
 }
