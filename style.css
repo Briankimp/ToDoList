@@ -35,20 +35,12 @@
   margin: 0px 1px 0px;
 }
 
-/* .ToDoApp inputBox{
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-} */
-
 .inputrow {
-  /* border-radius: 10%; */
   background-color: rgba(53, 51, 53, 0.095);
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* width: fit-content; */
 }
 
 button {
@@ -59,9 +51,9 @@ button {
   color: black;
   border-radius: 30px;
 }
-button:hover{
-    color: white;
-     background: #e74536;
+button:hover {
+  color: white;
+  background: #e74536;
 }
 input {
   outline: none;
@@ -72,3 +64,25 @@ input {
   font-weight: 14px;
 }
 
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before {
+  content: '';
+  height: 30px;
+  width: 30px;
+  /* background-color: #e74536; */
+  background-image: url(images/unchecked.png);
+  background-position: center;
+  background-size:cover;
+  border-radius: 50%;
+  position: absolute;
+  top:12px;
+  left: 8px;
+}
