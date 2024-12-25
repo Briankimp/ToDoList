@@ -3,14 +3,11 @@ const listContainer = document.getElementById("list-container");
 
 function addTask() {
   if (inputBox.value === "") {
-    alert("Write Something to add as task");
-    console.log("Nothing Written");
+    alert("Write a Task to Proceed!");
   } else {
-    let li = document.createElement("li");
-    li.innerHtml = inputBox.value;
+    const li = document.createElement("li");
+    li.innerHTML = inputBox.value;
     listContainer.appendChild(li);
-      console.log("The Task added is", li);
-      let span
   }
   inputBox.value = "";
 }
